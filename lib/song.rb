@@ -61,9 +61,8 @@ class Song
   end
 
   
-  def self.create_from_filename
-    # does the same thing as .new_from_filename but also saves the newly-created song to the @@all class variable
-     array = filename.split(" - ")
+  def self.create_from_filename(filename)
+    array = filename.split(" - ")
 
     song_name = array[1]
     artist_name = array[0]
