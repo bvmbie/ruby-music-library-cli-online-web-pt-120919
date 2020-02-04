@@ -10,6 +10,7 @@ class MusicLibraryController
   
   def call 
     # starts the CLI
+    puts "Welcome to your music library!"
     input = gets.strip
   end
   
