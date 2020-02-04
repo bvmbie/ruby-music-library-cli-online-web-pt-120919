@@ -6,6 +6,7 @@ class MusicImporter
   end
   
   def files
+    # returns all of the imported filenames
     
   end
   
