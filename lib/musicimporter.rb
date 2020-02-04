@@ -10,11 +10,10 @@ class MusicImporter
     Dir.entries(@path).select! {|entry| entry.end_with?(".mp3")}
   end
   
-  def self.import 
-    # imports all of the files from the library, instantiating a new Song object for each file
-    files.each do |file|
-      
+def import
+    self.files.each do |filename|
+      Song.create_from_filename(filename)
     end
-  end 
+  end
   
 end
