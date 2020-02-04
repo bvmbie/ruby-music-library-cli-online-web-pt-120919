@@ -8,7 +8,8 @@ class MusicLibraryController
   end
   
   def call 
-    # 
+    # starts the CLI
+    
   end
   
 end
