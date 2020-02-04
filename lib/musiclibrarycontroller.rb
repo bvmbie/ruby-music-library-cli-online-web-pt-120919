@@ -35,8 +35,8 @@ class MusicLibraryController
         list_songs_by_genre
       when "play song"
         play_song
-      end
     end
+  end
 
   def list_songs
     Song.all.sort{|a, b| a.name <=> b.name}.each_with_index do |s, i|
@@ -86,10 +86,6 @@ class MusicLibraryController
       song = array[input-1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
-  end
-    
-    
-    
   end
   
 end
