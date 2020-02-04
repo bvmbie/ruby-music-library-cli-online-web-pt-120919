@@ -10,7 +10,7 @@ class MusicLibraryController
   
   def call 
     # starts the CLI
-    
+    input = gets.strip
   end
   
 end
