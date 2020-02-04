@@ -12,7 +12,9 @@ class MusicImporter
   
   def self.import 
     # imports all of the files from the library, instantiating a new Song object for each file
-    
+    files.each do |file|
+      
+    end
   end 
   
 end
