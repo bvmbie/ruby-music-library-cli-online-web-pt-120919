@@ -11,6 +11,7 @@ class MusicImporter
   end
   
   def self.import 
+    # imports all of the files from the library, instantiating a new Song object for each file
     
   end 
   
