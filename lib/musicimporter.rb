@@ -7,8 +7,7 @@ class MusicImporter
   end
   
   def files
-    # returns all of the imported filenames
-    
+    Dir.entries(@path).select! {|entry| entry.end_with?(".mp3")}
   end
   
   def self.import 
