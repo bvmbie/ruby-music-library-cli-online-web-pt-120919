@@ -33,17 +33,6 @@ class Song
     artist.add_song(self)
   end
   
-  #def artist=(artist)
-		#artist.name = @name
-		#artist.add_song(@@all)
-		#if artist == nil
-			#@artist = artist
-		#elsif artist != nil
-			#@artist = artist
-			#artist.add_song(self)
-		#end
-	#end 
-  
   def genre=(genre)
     @genre = genre
     genre.songs << self unless genre.songs.include?(self)
@@ -59,9 +48,10 @@ class Song
     self.find_by_name(name) ? self.find_by_name(name) : self.create(name)
   end
   
-  def self.new_from_filename
-    # instantiates a new Song object based on a provided filename
-    
+  def self.new_from_filename(filename)
+    song = self.new(filename)
+    song.save 
+    song
   end
   
   def self.create_from_filename
