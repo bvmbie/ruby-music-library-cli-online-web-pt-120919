@@ -1,9 +1,8 @@
 class MusicImporter
-  attr_accessor :path
+  attr_accessor :path, :files
   
   
   def initialize(path)
-    # accepts a file path to a directory of MP3 files
     @path = path
   end
   
